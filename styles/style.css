@@ -6,14 +6,135 @@
     line-height: 1.375;
 }
 
-.page-header {}
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 147px;
+    z-index: 100;
+    /*width: 100% можно вместо right: 0*/
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(222, 222, 222, 0.50);
+     если браузер не поддерживает
+    @support (backdrop-filter: blur(10px)) {
+        backdrop-filter: blur(10px);
+        background-color: rgba(222, 222, 222, 0.50);
+    }*/
+    backdrop-filter: blur(10px);
+}
+
+.page-header__container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1414px; /* ширина блока контента + паддинги с двух сторон*/
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.page-header__logo {
+    margin-right: 237px;
+    width: 202px;
+    height: 147px;
+    display: inline-block;
+}
+
+.page-header__logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-header__nav {
+    /* Временное свойство... */
+    display: inline-block;
+    margin-right: 150px;
+}
 
 .page-header__nav-link {
     margin: 0 25px;
+    padding: 10px;
     color: black;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
 }
+
+.page-header__user-btn {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 1px solid #1F1E1E;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #1F1E1E;
+
+}
+
+
+.home {
+    padding-top: 147px;
+}
+
+.main-header__title,
+.main-header__text {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Lora', sans-serif;
+    text-transform: uppercase;
+    color: #1F1E1E;
+}
+
+.main-header__title {
+    margin: 0 0 70px;
+}
+
+.main-header__text {
+    margin: 0 auto;
+    max-width: 1007px;
+    width: 100%;
+}
+
+.main-header__picture {
+    display: block;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+}
+
+.main-header__picture::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 16.927%;
+}
+
+.main-header__picture-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-header {
+    padding: 100px 0;
+}
+
 .page-footer {}
