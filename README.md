@@ -1,1 +1,1 @@
-# <a href="https://adren167.github.io">StudyProject</a>
+# <a href="https://adren167.github.io/dist">StudyProject</a>
