@@ -161,17 +161,10 @@ figcaption {
   overflow: hidden;
   cursor: pointer;
 }
-.btn:hover {
-  background-color: #1f1e1e;
-  color: #ffffff;
-}
 .btn--red {
   color: #ffffff;
   background-color: #bc3324;
   border-color: #bc3324;
-}
-.btn--red:hover {
-  background-color: #a51505;
 }
 .x-btn {
   display: -webkit-box;
@@ -186,9 +179,6 @@ figcaption {
   background-color: #1f1e1e;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
-}
-.x-btn:hover {
-  background-color: #a51505;
 }
 .x-btn__icon {
   margin: auto;
@@ -390,7 +380,7 @@ figcaption {
   line-height: 1.375;
   text-align: center;
 }
-.field__date-input--year {
+.field__date-input--110w {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -713,6 +703,9 @@ figcaption {
   font-size: 18px;
   line-height: 25px;
 }
+.form__section-title--mb7 {
+  margin-bottom: 7px;
+}
 .form__check-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,9 +748,6 @@ figcaption {
   text-decoration: underline;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-}
-.form__close:hover {
-  color: #bc3324;
 }
 .listing {
   -webkit-box-sizing: border-box;
@@ -1057,19 +1047,17 @@ figcaption {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 90px 95px 50px;
-  background-color: rgba(28, 27, 27, 0.4);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  padding: 90px 50px 50px;
+  background-color: #dedede;
   overflow-y: auto;
   z-index: 110;
   display: none;
 }
-@supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
+@supports ((-webkit-backdrop-filter: blur(25px)) or (backdrop-filter: blur(25px))) {
   .pp {
-    background-color: rgba(28, 27, 27, 0.4);
-    -webkit-backdrop-filter: blur(50px);
-            backdrop-filter: blur(50px);
+    background-color: rgba(31, 30, 30, 0.4);
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
   }
 }
 .pp__wrapper {
@@ -1102,7 +1090,7 @@ figcaption {
 }
 .pp__sticky-close {
   position: sticky;
-  top: 0;
+  top: -60px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 0;
@@ -1129,9 +1117,10 @@ figcaption {
   background-color: #1f1e1e;
   text-transform: uppercase;
   font-weight: 400;
+  font-style: normal;
   font-family: "Lora", serif;
   font-size: 22px;
-  line-height: 1.36;
+  line-height: 30px;
   color: #ffffff;
   letter-spacing: 0.02em;
   z-index: 1;
@@ -1276,4 +1265,19 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #1f1e1e;
+    color: #ffffff;
+  }
+  .btn--red:hover {
+    background-color: #a51505;
+  }
+  .x-btn:hover {
+    background-color: #a51505;
+  }
+  .form__close:hover {
+    color: #bc3324;
+  }
 }
