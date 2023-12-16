@@ -513,7 +513,7 @@ figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 110px;
+  min-width: 110px;
   height: 110px;
   background-color: #1f1e1e;
 }
@@ -1740,7 +1740,7 @@ figcaption {
 .event__picture {
   display: block;
   position: relative;
-  width: 37.8234%;
+  width: 37.2564%;
   margin: 0 60px;
   font-size: 0;
   overflow: hidden;
@@ -2549,11 +2549,11 @@ figcaption {
   overflow: hidden;
 }
 .doit__container {
-  min-width: 2161px;
+  width: 2160px;
   overflow: hidden;
 }
 .doit__text {
-  margin: 0;
+  margin: 0 auto;
   color: #1f1e1e;
   font-family: "mak", serif;
   font-size: 128px;

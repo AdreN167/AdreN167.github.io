@@ -38,7 +38,7 @@
       <header class="main-header home__main-header">
         <h1 class="main-header__title">Арт - пространство</h1>
         <picture class="main-header__picture">
-          <img src="assets/images/LENNI.svg" class="main-header__picture-img" />
+          <img src="assets/images/LENNI.svg" class="main-header__picture-img" alt="logo" />
         </picture>
         <p class="main-header__text">
           для людей, горящих сердцем и делом место для настоящего
@@ -69,10 +69,10 @@
           </div>
           <div class="about__block2">
             <picture class="about__picture">
-              <img src="assets/images/about/about1.jpg" class="about__img" />
+              <img src="assets/images/about/about1.jpg" class="about__img" alt="about1" />
             </picture>
             <picture class="about__picture2">
-              <img src="assets/images/about/about2.jpg" class="about__img" />
+              <img src="assets/images/about/about2.jpg" class="about__img" alt="about2" />
             </picture>
             <h3 class="about__title about__title--w868 about__title--2">
               Мы предоставляем площади для вашего мероприятия
@@ -86,7 +86,7 @@
           </div>
           <div class="about__block3">
             <picture class="about__picture3">
-              <img src="assets/images/about/about3.jpg" class="about__img2" />
+              <img src="assets/images/about/about3.jpg" class="about__img2" alt="about3" />
             </picture>
             <div class="about__block3-wrapper">
               <p class="about__text about__text--mb140">
@@ -286,8 +286,8 @@
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Отдел аренды</h4>
-                  <a href="tel: +74993500730" class="contacts-item__info">+7 499 350 0730</a>
-                  <a href="mailto: hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
+                  <a href="tel:+74993500730" class="contacts-item__info">+7 499 350 0730</a>
+                  <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
               <div class="contacts-item">
@@ -298,13 +298,13 @@
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Отдел мероприятий</h4>
-                  <a href="tel: +74993500730" class="contacts-item__info">+7 499 350 0730</a>
-                  <a href="mailto: hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
+                  <a href="tel:+74993500730" class="contacts-item__info">+7 499 350 0730</a>
+                  <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
             </div>
             <picture class="contacts__picture">
-              <img src="assets/images/map.jpg" class="contacts__img" />
+              <img src="assets/images/map.jpg" class="contacts__img" alt="map" />
             </picture>
           </div>
         </div>
@@ -335,7 +335,7 @@
         </nav>
 
         <form class="page-footer__subscribe-form subscribe-form">
-          <label class="subscribe-form__field">
+          <div class="subscribe-form__field">
             <span class="subscribe-form__field-label">Подпишись и будь в курсе происходящего</span>
 
             <input class="subscribe-form__field-input" type="email" placeholder="Email" name="email" required />
@@ -343,7 +343,7 @@
             <button class="subscribe-form__send-btn" type="submit" name="send">
               Отправить
             </button>
-          </label>
+          </div>
 
           <label class="check">
             <input class="check__input" type="checkbox" name="agree" required checked />
@@ -402,7 +402,7 @@
 
         <form class="pp__form form">
           <div class="form__list">
-            <label class="field form__field form__field--w50">
+            <div class="field form__field form__field--w50">
               <h6 class="field__title">Формат мероприятия:</h6>
               <div class="field__radio radio">
                 <label class="radio__item">
@@ -429,10 +429,10 @@
                   <span class="radio__label">Другое</span>
                 </label>
               </div>
-            </label>
+            </div>
 
             <div class="form__group form__group--w50">
-              <label class="form__field field">
+              <div class="form__field field">
                 <h6 class="field__title">Планируемое количество посетителей:</h6>
 
                 <select class="field__select" name="amount">
@@ -441,9 +441,9 @@
                   <option value="500">от 100 до 500 человек</option>
                   <option value="1000">более 500 человек</option>
                 </select>
-              </label>
+              </div>
 
-              <label class="form__field field">
+              <div class="form__field field">
                 <h6 class="field__title">Дата проведения:</h6>
 
                 <div class="field__date-inputs">
@@ -451,7 +451,7 @@
                   <input class="field__date-input" type="text" placeholder="ММ" name="month" required />
                   <input class="field__date-input field__date-input--110w" type="text" placeholder="ГГГГ" name="year" required />
                 </div>
-              </label>
+              </div>
             </div>
           </div>
 
