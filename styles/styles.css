@@ -1536,6 +1536,9 @@ figcaption {
 .content p:last-child {
   margin-bottom: 0;
 }
+.content p {
+  max-width: 815px;
+}
 .content ul,
 .content ol {
   position: relative;
@@ -1574,7 +1577,7 @@ figcaption {
           box-sizing: border-box;
   display: inline-block;
   min-width: 20px;
-  color: #bc3324;
+  color: #1f1e1e;
   white-space: pre;
 }
 .content ul > li,
@@ -1812,21 +1815,6 @@ figcaption {
 }
 .event__content {
   margin-bottom: 80px;
-}
-.event__content-header {
-  margin: 0 0 20px;
-  font-size: 18px;
-  font-weight: 700;
-}
-.event__content-info {
-  margin: 0 0 20px;
-  max-width: 815px;
-}
-.event__content-ul {
-  margin: 0 0 75px;
-}
-.event__content-ol {
-  margin: 50px 0 0;
 }
 .main-header {
   padding-bottom: 100px;
