@@ -144,7 +144,6 @@ figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 0;
   font-weight: 600;
   font-size: 16px;
   color: #1f1e1e;
@@ -162,6 +161,9 @@ figcaption {
           flex-direction: column;
   height: 132px;
   width: 128px;
+}
+.link--h0 {
+  height: 0;
 }
 .link__name,
 .link__icon {
@@ -2225,8 +2227,8 @@ figcaption {
   grid-area: text;
   margin-left: auto;
 }
-.about__text--mb140 {
-  margin-bottom: 140px;
+.about__text--mb120 {
+  margin-bottom: 120px;
 }
 .about__picture {
   grid-area: picture1;
@@ -2320,6 +2322,9 @@ figcaption {
   width: calc(100% - 58px);
   -o-object-fit: contain;
      object-fit: contain;
+}
+.about__link {
+  margin-bottom: 30px;
 }
 .contacts__container {
   -webkit-box-sizing: border-box;
