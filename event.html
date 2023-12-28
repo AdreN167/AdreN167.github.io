@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni Art</title>
   <link rel="stylesheet" href="styles/styles.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
 
@@ -24,29 +25,50 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="link page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__btn-container">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
 
 
   <main class="main">
-    <!--Здесь будут хлебные крошки-->
+    <div class="breadcrumbs">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+      <a href="#" class="breadcrumbs__link">Раздел</a>
+      <a href="#" class="breadcrumbs__link">Страница раздела</a>
+    </div>
+
 
     <article class="event">
       <div class="event__container">
         <h1 class="event__title">Вечер | The Best of Sade</h1>
         <div class="event__wrapper">
-          <p class="event__info">
+          <p class="event__info-left event__info-left--ta-right">
             <span class="event__date-time-info">16/12/2022</span>
             <br />Кафе «Птичка»
           </p>
           <picture class="event__picture">
             <img src="assets/images/events/sade.jpg" class="event__img" alt="sade" />
           </picture>
-          <p class="event__info">
+          <p class="event__info-right">
             <span class="event__date-time-info">20.00</span>
             начало
             <br />
@@ -55,9 +77,7 @@
         </div>
 
         <div class="content event__content">
-          <h5>
-            <b>Программа мероприятия:</b>
-          </h5>
+          <h5>Программа мероприятия:</h5>
           <ul>
             <li>20:15 — Приветствие гостей</li>
             <li>20:30 — Первая подача блюд | Салаты</li>
@@ -69,9 +89,7 @@
             <li>23:00 — Завершение вечера</li>
           </ul>
           <br>
-          <h5>
-            <b>The Best Of Sade</b>
-          </h5>
+          <h5>The Best Of Sade</h5>
           <p>
             Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит
             9 треков, включая самые популярные хиты группы, раритеты и их
@@ -366,28 +384,26 @@
           </div>
 
           <div class="reserve__legend">
-            <h4 class="reserve__section-title">
-              Стоимость пригласительного билета
-            </h4>
+            <div class="reserve__price">
+              <h4 class="reserve__section-title">
+                Стоимость пригласительного билета
+              </h4>
 
-            <div class="reserve__tickets-legend">
-              <div class="reserve__tickets">
-                <div class="reserve__tickets-mark"></div>
-                <div class="reserve__qty-legend" data-price="1400" data-currency="₽">
-                  1 персона
+              <div class="reserve__price-list">
+                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона">
+                  1400
                 </div>
-              </div>
-
-              <div class="reserve__tickets">
-                <div class="reserve__tickets-mark reserve__tickets-mark--black"></div>
-                <div class="reserve__qty-legend" data-price="1250" data-currency="₽">
-                  1 персона
+                <div class="reserve__price-item" data-caption="₽ | 1 персона">
+                  1200
                 </div>
               </div>
             </div>
 
+
             <div class="reserve__note">
-              <span class="reserve__section-title reserve__section-title--note">Примечание</span>
+              <h4 class="reserve__section-title reserve__section-title--note">
+                Примечание
+              </h4>
 
               <div class="reserve__note-listing">
                 <div class="reserve__note-elem">
@@ -441,7 +457,7 @@
             </button>
           </div>
 
-          <label class="check">
+          <label class="check check--pt0">
             <input class="check__input" type="checkbox" name="agree" required checked />
 
             <span class="check__mark"></span>
@@ -466,15 +482,16 @@
           </a>
           <a href="#" class="page-footer__inst-link">
             <svg class="page-footer__social-icon" width="58" height="58">
-              <use xlink:href="assets/icons/symbols.svg#social_inst"></use>
+              <use xlink:href="assets/icons/symbols.svg#social_vk"></use>
             </svg>
           </a>
         </div>
         <div class="page-footer__tagree">
-          <a href="#" class="link page-footer__tagree-label">Создание и продвижение</a>
-          <svg class="page-footer__tagree-icon" width="56" height="17">
-            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
-          </svg>
+          <a href="#" class="link page-footer__tagree-label">Создание и продвижение
+            <svg class="page-footer__tagree-icon" width="56" height="17">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -482,7 +499,7 @@
   <div class="pp" id="eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn">
+        <button type="button" class="pp__x-btn x-btn">
           <svg class="x-btn__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
