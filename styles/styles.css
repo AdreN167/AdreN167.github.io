@@ -586,6 +586,7 @@ figcaption {
   margin-bottom: 0;
 }
 .arrow {
+  padding: 0;
   width: 92px;
   height: 62px;
   background-color: transparent;
@@ -2597,7 +2598,7 @@ figcaption {
   width: 100%;
 }
 .upcoming {
-  padding: 100px 0 55px 0;
+  padding: 90px 0 55px 0;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .upcoming__container {
@@ -2625,7 +2626,7 @@ figcaption {
 .upcoming__top-border::after {
   content: "";
   position: absolute;
-  top: -130px;
+  top: -120px;
   display: block;
   width: 0;
   height: 0;
@@ -2710,8 +2711,8 @@ figcaption {
 .upcoming__link {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .doit {
   width: 100%;
@@ -2794,6 +2795,17 @@ figcaption {
   }
   .page-header__btn-container {
     width: 152px;
+  }
+  .upcoming {
+    padding: 70px 0 47px 0;
+  }
+  .upcoming__top-border::before,
+  .upcoming__top-border::after {
+    top: -100px;
+  }
+  .upcoming__bottom-border::before,
+  .upcoming__bottom-border::after {
+    top: 47px;
   }
   .width_624 {
     max-width: 604px;
@@ -2891,11 +2903,17 @@ figcaption {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .upcoming__listing {
+    padding: 0;
+  }
   .width_624 {
     max-width: 566px;
   }
 }
 @media (max-width: 1019px) {
+  .link {
+    font-size: 14px;
+  }
   .organisation-item {
     max-width: 280px;
   }
@@ -3218,6 +3236,26 @@ figcaption {
   .offers__btn-2 {
     font-size: 14px;
   }
+  .upcoming {
+    padding: 50px 0 13px 0;
+  }
+  .upcoming__top-border::before,
+  .upcoming__top-border::after {
+    top: -80px;
+  }
+  .upcoming__bottom-border::before,
+  .upcoming__bottom-border::after {
+    top: 13px;
+  }
+  .upcoming__blocks {
+    max-width: 300px;
+  }
+  .upcoming__slider-blocks {
+    max-width: 60.5px;
+  }
+  .upcoming__slider-block {
+    width: 9px;
+  }
 }
 @media (max-width: 767px) {
   .body {
@@ -3433,6 +3471,9 @@ figcaption {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .page-header__container {
+    padding-left: 0;
+  }
   .page-header__logo {
     width: 96px;
     height: 70px;
@@ -3508,9 +3549,25 @@ figcaption {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .upcoming {
+    padding: 30px 0 29px 0;
+  }
   .upcoming__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .upcoming__top-border::before,
+  .upcoming__top-border::after {
+    top: -40px;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.6);
+  }
+  .upcoming__bottom-border::before,
+  .upcoming__bottom-border::after {
+    top: 29px;
+    border-top: 10px solid rgba(255, 255, 255, 0.6);
+  }
+  .upcoming__listing {
+    padding: 0;
   }
 }
 @media (max-width: 649px) {
