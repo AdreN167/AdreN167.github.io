@@ -1377,7 +1377,7 @@ figcaption {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 90px 50px 50px;
+  padding: 90px 40px 50px;
   background-color: #dedede;
   overflow-y: auto;
   z-index: 110;
@@ -1414,9 +1414,9 @@ figcaption {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  max-width: 950px;
   margin: 0 auto;
   padding: 0 40px 40px;
+  max-width: 950px;
 }
 .pp__sticky-close {
   position: sticky;
@@ -1442,7 +1442,8 @@ figcaption {
           align-items: center;
   margin: -40px 0 70px -85px;
   padding: 10px 85px;
-  width: 595px;
+  width: 100%;
+  max-width: 595px;
   min-height: 80px;
   background-color: #1f1e1e;
   text-transform: uppercase;
@@ -2912,6 +2913,13 @@ figcaption {
     max-width: 566px;
   }
 }
+@media (max-width: 1159px) {
+  .pp__title {
+    margin-left: -30px;
+    max-width: 465px;
+    padding: 10px 60px 10px 18px;
+  }
+}
 @media (max-width: 1019px) {
   .link {
     font-size: 14px;
@@ -3316,6 +3324,9 @@ figcaption {
   .check__label {
     font-size: 14px;
   }
+  .field__textarea {
+    height: 235px;
+  }
   .breadcrumbs {
     padding-left: 20px;
     padding-right: 20px;
@@ -3430,6 +3441,26 @@ figcaption {
   .table__td:nth-child(2n-1) {
     background-color: rgba(31, 30, 30, 0.03);
   }
+  .form__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__field,
+  .form__group {
+    width: 100%;
+  }
+  .form__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__submit {
+    margin-bottom: 30px;
+    width: 100%;
+  }
   .subscribe-form__field-label {
     text-align: center;
   }
@@ -3472,6 +3503,10 @@ figcaption {
   .tariff__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .pp {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .container-content .article__container {
     padding-left: 20px;
@@ -3617,6 +3652,13 @@ figcaption {
   }
 }
 @media (max-width: 649px) {
+  .x-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .field__title {
+    font-size: 16px;
+  }
   .contacts-item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3656,6 +3698,26 @@ figcaption {
   .listing__card-event {
     width: 100%;
     margin: 0 0 60px;
+  }
+  .pp {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pp__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pp__x-btn {
+    top: -20px;
+    right: -20px;
+  }
+  .pp__title {
+    margin-left: -10px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    max-width: 225px;
+    font-size: 14px;
+    line-height: 19px;
   }
   .home__main-header {
     margin-bottom: 40px;
