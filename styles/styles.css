@@ -2720,7 +2720,8 @@ figcaption {
 }
 .doit__container {
   margin: 0 auto;
-  width: 2160px;
+  max-width: 2160px;
+  width: 130.5%;
 }
 .doit__text {
   margin: 0;
@@ -2809,6 +2810,13 @@ figcaption {
   .upcoming__bottom-border::before,
   .upcoming__bottom-border::after {
     top: 47px;
+  }
+  .doit__container {
+    max-width: 1519px;
+  }
+  .doit__text {
+    margin-left: -32px;
+    font-size: 90px;
   }
   .width_624 {
     max-width: 604px;
@@ -2908,6 +2916,38 @@ figcaption {
   }
   .upcoming__listing {
     padding: 0;
+  }
+  .doit__container {
+    width: 120%;
+  }
+  .doit__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: -27px;
+    font-size: 80px;
+  }
+  .doit__text-part-1 {
+    display: block;
+    width: 704px;
+  }
+  .doit__text-part-2 {
+    display: block;
+    margin: 0 auto;
+    width: 615px;
+  }
+  .doit__text-part-3 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: -59px;
+    width: 875px;
+  }
+  .doit__text-part-3 {
+    margin-right: -19px;
   }
   .width_624 {
     max-width: 566px;
@@ -3650,6 +3690,9 @@ figcaption {
   .upcoming__listing {
     padding: 0;
   }
+  .doit__text-part-2 {
+    margin-left: 26.5%;
+  }
 }
 @media (max-width: 649px) {
   .x-btn {
@@ -3895,6 +3938,16 @@ figcaption {
   }
   .offers__i-want {
     margin-bottom: 25px;
+  }
+  .doit__text {
+    font-size: 40px;
+  }
+  .doit__text-part-1 {
+    margin-left: -15px;
+    width: 382px;
+  }
+  .doit__text-part-2 {
+    width: 314px;
   }
 }
 @media (max-width: 499px) {
