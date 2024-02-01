@@ -43,7 +43,7 @@
             <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
-        <button type="button" class="page-header__nav-toggle"></button>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
       </div>
     </div>
   </header>
@@ -501,10 +501,10 @@
       </div>
     </div>
   </footer>
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button type="button" class="pp__x-btn x-btn">
+        <button type="button" class="pp__x-btn x-btn  js-eventCloseBtn">
           <svg class="x-btn__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -621,7 +621,7 @@
               Отправить
             </button>
 
-            <button type="button" class="form__close">Закрыть</button>
+            <button type="button" class="form__close  js-eventCloseBtn">Закрыть</button>
           </div>
         </form>
       </div>

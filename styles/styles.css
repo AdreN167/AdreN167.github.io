@@ -186,6 +186,7 @@ figcaption {
 .x-btn__icon {
   margin: auto;
   color: #ffffff;
+  pointer-events: none;
 }
 .ok {
   display: block;
@@ -2072,6 +2073,10 @@ figcaption {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
 }
 .page-header__nav-toggle::before {
   top: 13px;
@@ -2761,10 +2766,22 @@ figcaption {
 .show-event-popup body {
   overflow: hidden;
 }
-.show-event-popup #eventPP {
+.show-event-popup #js-eventPP {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.show-nav .page-header__nav-toggle::before {
+  -webkit-transform: translate(0px, 6px) rotate(45deg);
+      -ms-transform: translate(0px, 6px) rotate(45deg);
+          transform: translate(0px, 6px) rotate(45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.show-nav .page-header__nav-toggle::after {
+  -webkit-transform: translate(0px, -6px) rotate(-46deg);
+      -ms-transform: translate(0px, -6px) rotate(-46deg);
+          transform: translate(0px, -6px) rotate(-46deg);
 }
 @media (max-width: 1659px) {
   .body {
@@ -3371,6 +3388,14 @@ figcaption {
   .doit__text-part-3 {
     margin-left: 4vw;
     width: 101%;
+  }
+  .show-nav body {
+    overflow: hidden;
+  }
+  .show-nav .page-header__nav {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (max-width: 767px) {
