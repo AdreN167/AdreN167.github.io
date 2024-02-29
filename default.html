@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="scripts/jquery-3.7.1.min.js"></script>
 </head>
 
 
@@ -96,15 +98,17 @@
           <a href="#" class="page-footer__nav-link">Контакты</a>
         </nav>
 
-        <form class="page-footer__subscribe-form subscribe-form">
+        <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__subscribe-form subscribe-form" id="js-subscribeForm">
           <div class="subscribe-form__field">
             <span class="subscribe-form__field-label">Подпишись и будь в курсе происходящего</span>
 
-            <input class="subscribe-form__field-input" type="email" placeholder="Email" name="email" required />
+            <div class="subscribe-form__wrapper">
+              <input id="js-subscribeEmail" class="subscribe-form__field-input" type="email" placeholder="Email" name="email" required />
 
-            <button class="subscribe-form__send-btn" type="submit" name="send">
-              Подписаться
-            </button>
+              <button class="subscribe-form__send-btn" type="submit" name="send">
+                Подписаться
+              </button>
+            </div>
           </div>
 
           <label class="check check--pt0 subscribe-form__check">
