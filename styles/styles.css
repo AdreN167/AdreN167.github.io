@@ -2441,6 +2441,10 @@ button.swiper-pagination-bullet {
   background-color: #bc3324;
   border-color: #bc3324;
 }
+.btn--disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
 .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3729,6 +3733,29 @@ button.swiper-pagination-bullet {
       align-self: center;
   font-size: 14px;
   font-weight: 400;
+}
+.scene__table {
+  cursor: pointer;
+  color: transparent;
+}
+.scene__table--disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+.scene__table-num {
+  color: #1f1e1e;
+}
+.scene__table-num--red {
+  color: #bc3324;
+}
+.scene__table-num--active {
+  color: #ffffff;
+}
+.scene__table-group-active {
+  color: #1f1e1e;
+}
+.scene__table-group-active--red {
+  color: #bc3324;
 }
 .tariff__container {
   -webkit-box-sizing: border-box;
